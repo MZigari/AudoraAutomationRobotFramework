@@ -8,10 +8,9 @@ Dado que o cliente esteja na tela de Sign In
     Click Element                       ${HOME.BOTAO_SIGNIN}
 
 E digitar o email na janela de create an account
-    [Arguments]     ${NOVO_EMAIL}
-#    ${EMAIL}    FakerLibrary.Email
-    Input Text    ${CADASTRO.INPUT_EMAIL_CREATE}    ${NOVO_EMAIL}
-#    Input Text    ${EMAILFAKE}    ${EMAIL}
+
+   ${EMAIL}    FakerLibrary.Email
+   Input Text    ${CADASTRO.INPUT_EMAIL_CREATE}    ${EMAIL}
 
 
 E clicar no botao create an account
